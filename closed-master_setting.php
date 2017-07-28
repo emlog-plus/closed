@@ -74,7 +74,7 @@ if (CLOSED_YN == "Y") {
   </div>  
 
 <div class="form-group">
-    <label>否允许手机版访问:<font color=red>提示：需要在m/view/header.php里面的 < /head> 上面添加挂载点&nbsp;doAction('index_mhead')</font></label>
+    <label>否允许手机版访问:<font color=red>提示：需要在m/view/header.php里面的 </head> 上面添加挂载点&nbsp;doAction('index_mhead')</font></label>
 <select name="myn">
         <option value="Y" <?php echo $ex3; ?>>是</option>
         <option value="N" <?php echo $ex4; ?>>否</option>
@@ -128,6 +128,7 @@ function plugin_setting()
 }
 ?>
 <script>
+setTimeout(hideActived,2600);
 $("#menu_mg").addClass('active');
 $("#menu_close").addClass('active-page');
 </script>
