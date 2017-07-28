@@ -11,7 +11,7 @@ Author URL: http://www.lzuhzy.com
 
 !defined('EMLOG_ROOT') && exit('access deined!');
 
-require_once (EMLOG_ROOT . "/content/plugins/closed/closed_config.php");
+require_once (EMLOG_ROOT . "/content/plugins/closed-master/closed-master_config.php");
 
 function closed() {//自定义函数
 if (CLOSED_YN == "Y") {
@@ -32,7 +32,7 @@ if (CLOSED_YN == "Y") {
 }
 
 function closed_menu() {//后台插件侧边栏菜单
-	echo '<li><a href="./plugin.php?plugin=closed" id="menu_close">关闭博客</a></li>';
+	echo '<li><a href="./plugin.php?plugin=closed-maste" id="menu_close">关闭博客</a></li>';
 }
 
 addAction('index_head', 'closed');
