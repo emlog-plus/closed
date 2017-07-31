@@ -32,7 +32,7 @@ if (CLOSED_YN == "Y") {
 }
 
 function closed_menu() {//后台插件侧边栏菜单
-	echo '<li><a href="./plugin.php?plugin=closed-maste" id="menu_close">关闭博客</a></li>';
+	echo '<li><a href="./plugin.php?plugin=closed-master" id="menu_close">关闭博客</a></li>';
 }
 
 addAction('index_head', 'closed');
