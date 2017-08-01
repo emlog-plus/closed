@@ -32,7 +32,8 @@ if (CLOSED_YN == "Y") {
 }
 
 function closed_menu() {//后台插件侧边栏菜单
-	echo '<li><a href="./plugin.php?plugin=closed-master" id="menu_close">关闭博客</a></li>';
+	include (EMLOG_ROOT . "/content/plugins/closed-master/lang/".Option::get('language').".php");
+	echo '<li><a href="./plugin.php?plugin=closed-master" id="menu_close">'.$lang["closed"].'</a></li>';
 }
 
 addAction('index_head', 'closed');
